@@ -37,6 +37,7 @@ def optimal(ref_string: str, length: int) -> dict:
         # Checks if character is in frame
         if character in frames: # Checks if the character is already in the frames.
             hit += 1 # adds a hit count
+            isMiss = False # indicates that the cycle is a hit
         else: # if character is not in frame
             miss += 1 # adds a miss count
             isMiss = True # indicates that the cycle is a miss
